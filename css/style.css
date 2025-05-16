@@ -294,3 +294,162 @@ body  {
     top: 100%;
     left: 89%;
 }
+
+
+.reviews {
+    margin-bottom: 150px;
+}
+
+.reviews img {
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.reviews img:hover {
+    transform: translateY(-10%);
+}
+
+.reviews__title {
+    font-weight: 600;
+    font-size: 36px;
+    color: #1A212F;
+    font-family: Rubik, sans-serif;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 100px;
+}
+
+.reviews__row {
+    display: flex;
+    gap: 30px;
+}
+
+.reviews__row-item {
+    width: 406px;
+    height: 180px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 0 60px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reviews__row-item:hover {
+    transform: translateY(-5%);
+}
+
+
+.reviews__row-item img {
+    position: absolute;
+    top: 19%;
+    left: 8%;
+}
+
+.reviews__text {
+    color: #1A212F;
+    width: 362px;
+    height: 100px;
+    padding-top: 35px;
+}
+
+.reviews__info-text {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 14px;
+    color: #848484;
+}
+
+.reviews__circle-main {
+    display: flex;
+    padding-top: 50px;
+    gap: 12px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.reviews__elipse {
+    position: absolute;
+    left: 75%;
+    display: flex;
+    gap: 25px;
+}
+
+
+.section__find {
+    background-color: #FAC663;
+    height: 580px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.find__info {
+    display: flex;
+}
+
+
+.find__title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 120px;
+}
+
+.find__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.find__list-title {
+    padding-top: 20px;
+    color: #1A212F;
+    font-weight: 600;
+}
+
+.find__list-text {
+    max-width: 227px;
+}
+
+.find__img img {
+    position: absolute;
+    left: 58%;
+    top: 0%;
+}
+
+.find__social-item {
+    padding-right: 20px;
+}
+
+.find__social-title {
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #1A212F;
+}
+
+
+.footer {
+    position: relative;
+}
+
+.footer__line {
+    background-color: #EFEFEF;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.footer__text-item {
+    color: #8F8F8F;
+    font-size: 12px;
+    cursor: pointer;
+}
