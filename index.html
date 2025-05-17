@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal__bron.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Site</title>
+    <title>koteyka</title>
 </head>
 <body>
     <header class="header">
@@ -16,10 +17,10 @@
             <img src="img/лого.svg" alt="">
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a href="#" class="menu__list-link">Почему мы?</a></li>
-                    <li class="menu__list-item"><a href="#" class="menu__list-link">Номера</a></li>
-                    <li class="menu__list-item"><a href="#" class="menu__list-link">Отзывы</a></li>
-                    <li class="menu__list-item"><a href="#" class="menu__list-link">Как нас найти</a></li>
+                    <li class="menu__list-item"><a href="#why" class="menu__list-link">Почему мы?</a></li>
+                    <li class="menu__list-item"><a href="#nomera" class="menu__list-link">Номера</a></li>
+                    <li class="menu__list-item"><a href="#otziv" class="menu__list-link">Отзывы</a></li>
+                    <li class="menu__list-item"><a href="#find" class="menu__list-link">Как нас найти</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,13 +33,13 @@
             <h2 class="main__subtitle">Санкт-Петербург</h2>
             <h1 class="main__title">Котейка</h1>
             <h3 class="main__text">Уютная гостиница для котов и кошек</h3>
-            <button class="main__button"><a href="#" class="main__link">Забронировать</a><img src="img/paw.svg" alt=""></button>
+            <button class="main__button" id="bookButton"><a href="#" class="main__link">Забронировать</a><img src="img/paw.svg" alt=""></button>
             </div>
         </div>
     </section>
 
 
-    <section class="section__why">
+    <section class="section__why" id="why">
         <div class="container">
             <h2 class="why__title">Почему мы?</h2>
             <div class="why__row">
@@ -92,44 +93,70 @@
         </div>
     </section>
 
-    <section class="section__room">
-        <div class="container__room">
-            <h2 class="room__title">Номера</h2>
-            <img src="img/cat__team.jpg" alt="">
-            <div class="room__row">
-                <div class="room__item">
-                    <h4 class="room__item-title">Эконом плюс</h4>
-                    <div class="room__item-info">
-                    <div class="room__item-circle"></div>
-                    <p class="room__item-text">Площадь - 0,90 м2</p>
-                    </div>
+    <section id="nomera" class="section__room">
+        <div class="rooms-slider">
+  <div class="slides-container">
+    <div class="slide active">
+      <div class="room-image">
+        <img src="img/cat__team.jpg" alt="Эконом плюс">
+      </div>
+      <div class="room-info">
+        <h2>Эконом плюс</h2>
+        <ul>
+          <li>Площадь - 0,90 м²</li>
+          <li>Размеры (ШхГхВ) — 90х100х180 см</li>
+          <li>Цена за сутки: 200₽</li>
+        </ul>
+        <button class="main__button book-btn">
+          <a href="#" class="main__link">Забронировать</a>
+          <img src="img/paw.svg" alt="">
+        </button>
+      </div>
+    </div>
 
-                    <div class="room__item-info">
-                    <div class="room__item-circle"></div>
-                    <p class="room__item-text">Размеры (ШхГхВ) — 90х100х180 см</p>
-                    </div>
+    <div class="slide">
+      <div class="room-image">
+        <img src="img/comd.png" alt="Комфорт">
+      </div>
+      <div class="room-info">
+        <h2>Комфорт</h2>
+        <ul>
+          <li>Площадь - 1,33 м²</li>
+          <li>Размеры (ШхГхВ) — 100х125х180 см</li>
+          <li>Цена за сутки: 350₽</li>
+        </ul>
+        <button class="main__button book-btn">
+          <a href="#" class="main__link">Забронировать</a>
+          <img src="img/paw.svg" alt="">
+        </button>
+      </div>
+    </div>
 
-                    <div class="room__item-info">
-                    <div class="room__item-circle"></div>
-                    <p class="room__item-text">Цена за сутки: 200₽</p>
-                    </div>
+    <div class="slide">
+      <div class="room-image">
+        <img src="img/sit.png" alt="Люкс">
+      </div>
+      <div class="room-info">
+        <h2>Люкс</h2>
+        <ul>
+          <li>Площадь - 1,5 м²</li>
+          <li>Размеры (ШхГхВ) — 120х150х200 см</li>
+          <li>Цена за сутки: 500₽</li>
+        </ul>
+        <button class="main__button book-btn">
+          <a href="#" class="main__link">Забронировать</a>
+          <img src="img/paw.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
 
-                    <button class="room__btn"><a href="#" class="room__btn-link">Забронировать</a> <img src="img/pav__room.svg" alt=""></button>
-                </div>
-            </div>
-            <div class="room__circle-main">
-                <div class="room__circle-one"></div>
-                <div class="room__circle-two"></div>
-                <div class="room__circle-three"></div>
-            </div>
-            <div class="room__elipse">
-                <a href="#" class="room__elipse-link"><img src="img/elipse__2.svg" alt=""></a>
-                <a href="#" class="room__elipse-link"><img src="img/elipse__1.svg" alt=""></a>
-            </div>
-        </div>
+  <button class="slider-arrow prev-arrow">←</button>
+  <button class="slider-arrow next-arrow">→</button>
+</div>
     </section>
 
-    <section class="reviews">
+    <section id="otziv" class="reviews">
         <img src="img/paw__reviews.png" alt="">
         <div class="container">
             <h2 class="reviews__title">Отзывы</h2>
@@ -185,7 +212,7 @@
         </div>
     </section>
 
-    <section class="section__find">
+    <section id="find" class="section__find">
         <div class="container">
             <div class="find__info">
                 <ul class="find__list">
@@ -239,12 +266,41 @@
         </div>
         </div>
         <hr class="footer__line">
-        <img src="img/vecrot.svg" alt="">
          <div class="footer__text">
-            <p class="footer__text-item">2019 Все права защищены</p>
+            <p class="footer__text-item"> <img src="img/vecrot.svg" alt="">2019 Все права защищены</p>
             <p class="footer__text-item">Политика конфиденциальности</p>
         </div>
-    </footer>
+    </footer> 
+
+<div class="modal" id="bookingModal">
+  <div class="modal__content">
+    <span class="modal__close">&times;</span>
+    <div class="booking-form" id="bookingForm">
+      <h2>Забронировать номер</h2>
+      <form id="reservationForm">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="text" placeholder="Имя Питомца" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="E-mail" required>
+        
+        <div class="date-range">
+          <label>Дата заезда</label>
+          <div class="dates">
+            <input type="text" placeholder="с 26.01.2020" class="date-input" required>
+            <input type="text" placeholder="по 26.02.2020" class="date-input" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="submit-btn">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="success-message" id="successMessage" style="display: none;">
+      <h2>Спасибо за заявку!</h2>
+      <p>Мы свяжемся с вами в ближайшее время</p>
+      <button class="submit-btn" id="closeSuccessBtn">Закрыть</button>
+    </div>
+  </div>
+</div>
 
     <script src="js/main.js"></script>
 </body>
